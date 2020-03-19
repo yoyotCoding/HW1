@@ -40,7 +40,8 @@ void printFormattedIntegers(char* format, char* numbers)
 
 		if (token[0] == 'd')
 		{	
-			sscanf(newStr, "%d", &numbers);
+			int num;
+			sscanf(numbers, "%d", &num);
 
 			//printf("%s", newStr);
 			//scanf("%d", &num);
@@ -161,20 +162,3 @@ void r(int num, char *newNum)
 
 	}
 }
-
-
-//if (sscanf(format,"%s", &num) == 1) //if one of the segments is a decimal number
-		//	sprintf(newStr,"%d",num);
-		//else if (sscanf(format, "%d", &num) == 1)
-		//	sprintf(newStr, "%x", num);
-		//else if (sscanf(format, "%d", &num) == 1)
-		//	sprintf(newStr, "%o", num);
-		////else if (sscanf("%b", &token) == 1) ////binary
-		////	strcat(newStr, token);
-		////else if (sscanf("%r", &token) == 1) ////roman
-		////{
-		////	r(token, numbers);
-		////	sprintf(newStr, "%d", num);
-		////}	
-		//else
-		//	strcat(newStr, token);
